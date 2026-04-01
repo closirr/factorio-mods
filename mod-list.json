@@ -39,6 +39,16 @@
     },
     
     {
+      "name": "factoryplanner",
+      "enabled": true
+    },
+    
+    {
+      "name": "flib",
+      "enabled": true
+    },
+    
+    {
       "name": "jetpack",
       "enabled": true
     },
@@ -50,6 +60,11 @@
     
     {
       "name": "RateCalculator",
+      "enabled": true
+    },
+    
+    {
+      "name": "squeak-through-2",
       "enabled": true
     },
     
