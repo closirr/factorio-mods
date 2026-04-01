@@ -1,0 +1,582 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.4.16
+Date: 06. 03. 2026
+  Bugfixes:
+    - Fixed being able to leave cargo pods by activating the jetpack.
+    - Fixed being able to leave space platform hubs by activating the jetpack.
+
+  Locale:
+    - Updated Spanish translation thanks to SpiderLove.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.4.15
+Date: 02. 02. 2026
+  Changes:
+    - Mods can configure what the jetpack bumps into.
+
+  Bugfixes:
+    - Fixed losing held item when engaging the jetpack.
+    - Fixed trash unrequested triggering when toggling the jetpack whilst personal logistics was disabled.
+
+  Compatibility:
+    - [YKR Inventory] Fixed items spilling on the ground.
+    - [YKR Inventory] Fixed the jetpack acceleration message showing twice in chat.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.4.14
+Date: 19. 11. 2025
+  Bugfixes:
+    - Fixed the "Cursor stack must not be empty." crash when holding a blueprint item.
+
+  Locale:
+    - Updated Chinese Traditional translation, thanks to Cassidy.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.4.13
+Date: 23. 09. 2025
+  Bugfixes:
+    - Fixed the technology icons getting squished.
+    - Fixed the 3 Krastorio 2 fuels not being recognized anymore.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.4.12
+Date: 30. 06. 2025
+  Bugfixes:
+    - Fixed a crash when attempting to use the jetpack while in a vehicle.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.4.11
+Date: 24. 06. 2025
+  Bugfixes:
+    - Zoom level is now preserved when toggling the jetpack.
+
+  Locale:
+    - Added Chinese Traditional translation, thanks to Cassidy.
+    - Updated Chinese Simplified translation, thanks to tanvec.
+    - Updated Turkish translation, thanks to UberReis.
+    - Updated Ukrainian tranlsation, thanks to GraMitrey.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.4.10
+Date: 07. 04. 2025
+  Bugfixes:
+    - Fixed entering the Editor while using a jetpack causing issues when exiting the Editor.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.4.9
+Date: 05. 04. 2025
+  Bugfixes:
+    - Added a migration to remove old Factorio 1.1 rendering API data from jetpacks.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.4.8
+Date: 27. 01. 2025
+  Bugfixes:
+    - Fixed spidertrons no longer following the player after toggling jetpack.
+    - Fixed spidertron remote selection being lost when toggling jetpack.
+    - Fixed that toggling the jetpack would send items to trash slots even if personal logistics were turned off.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.4.7
+Date: 27. 11. 2024
+  Changes:
+    - Now requires Factorio 2.0.22 or higher.
+
+  Bugfixes:
+    - Fixed jetpacks not being recognized in equipment grids in Factorio 2.0.22.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.4.6
+Date: 03. 11. 2024
+  Changes:
+    - Jetpack characters are no longer affected by acid puddles (and other effects that only affect "ground units").
+
+  Bugfixes:
+    - Fixed inactive logistic sections becoming active when toggling the jetpack in some cases.
+    - Fixed crash when running out of fuel while in remote view.
+      - With this fix you can now activate or deactivate the jetpack while in the remote view.
+    - Fixed crash when toggling jetpack with ghost equipment in the armour equipment grid.
+    - Fixed "Filter conflicts with filter in slot X" crash that could happen on jetpack toggle in some cases.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.4.5
+Date: 27. 10. 2024
+  Bugfixes:
+    - Fixed logistic request multipliers being lost on toggling the jetpack.
+    - Jetpacks can no longer be placed in tank equipment grids.
+    - Removed "jetpack sound" internal entity from Factoriopedia.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.4.4
+Date: 24. 10. 2024
+  Bugfixes:
+    - Fixed crash when moving introduced in last version.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.4.3
+Date: 24. 10. 2024
+  Bugfixes:
+    - Fixed crash when activating jetpack with filtered inventory slots.
+    - Fixed crash when activating or deactivating jetpack when in the remote view.
+      - This prevents you from activating or deactivating the jetpack while in the remote view.
+    - Fixed logistic sections being automatically enabled when activating or deactivating the jetpack.
+    - Updated jetpack movement calculation to deal with the increased number of direction definitions.
+    - Updated jetpack recipe and item ordering so they should not appear in the middle of other equipment groups.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.4.2
+Date: 21. 10. 2024
+  Bugfixes:
+    - Fixed crash when landing in water.
+    - Fixed armor being removed from the quickbar when toggling the jetpack.
+    - Known issue: The camera zoom resets when toggling the jetpack. The fix for this will require a Factorio update.
+
+  Compatibility:
+    - Fixed armor id being altered by jetpack use.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.4.1
+Date: 21. 10. 2024
+  Info:
+    - Updated for Factorio 2.0.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.3.14
+Date: 18. 09. 2023
+  Bugfixes:
+    - Fixed spidertrons no longer following the player after toggling jetpack.
+
+  Locale:
+    - Added Vietnamese translation, thanks to DTA.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.3.13
+Date: 31. 05. 2023
+  Bugfixes:
+    - Fixed jetpack using more fuel than intended whilst not actively going in a direction.
+    - Fixed mod settings not having minimum or maximum values.
+    - Fixed remote interface get_current_fuel_for_character.
+
+  Compatibility:
+    - Toggling the jetpack will now preserve any character bonuses set by other mods (e.g. running speed, mining speed, crafting speed, reach, inventory slots...)
+      Previously, only the health bonus was preserved.
+    - The order in which mods add fuels no longer dictates their consumption priority. Instead the jetpack will always choose the fuel with the highest thrust bonus.
+
+  Locale:
+    - Updated Russian translation, thanks to Shadow_Man.
+    - Updated Spanish translation, thanks to SpiderLove.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.3.12
+Date: 13. 04. 2023
+  Changes:
+    - Now requires Factorio 1.1.77 or higher.
+    - The amount of smoke particles created is now based on travel speed.
+
+  Bugfixes:
+    - Fixed jetpack healing you on toggle with mods that grant max health bonuses.
+    - Fixed closing armor grid UI when toggling jetpack.
+    - Fixed being able to quickly toggle the jetpack causing the player to not land.
+
+  Locale:
+    - Added Thai translation, thanks to windMew.
+    - Updated Japanese translation, thanks to YAMATO_Hajime.
+
+  Optimizations:
+    - Slightly improved performance throughout.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.3.11
+Date: 17. 01. 2023
+  Bugfixes:
+    - Fixed non-fungible items (e.g. blueprints, spidertron remotes, etc.) being removed from the quickbar when toggling the jetpack.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.3.10
+Date: 14. 01. 2023
+  Bugfixes:
+    - Fixed radioactive damage still making you fall down.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.3.9
+Date: 13. 01. 2023
+  Changes:
+    - Fuel consumed will now appear in item consumption stats.
+    - Now requires Factorio 1.1.74 or higher.
+
+  Bugfixes:
+    - Fixed temporary planners (such as blank deconstruction/upgrade planners obtained from the shortcuts) returning to the inventory instead of disappearing when dismissed after toggling the jetpack.
+    - Fixed blueprints created from a copy-paste resetting to default rotation when toggling the jetpack.
+    - Fixed ghosts in cursor being cleared when toggling the jetpack.
+    - Fixed "falling down" animation triggering when damaged while spacewalking.
+    - Removed thrust message when trying to turn on jetpack inside a vehicle.
+    - Fixed missing description for mod setting for shield damage.
+
+  Optimizations:
+    - Significantly improved performance when jetpack is toggled by players with extremely large inventories.
+    - Slightly improved performance when flying.
+
+  Compatibility:
+    - "Radioactive" damage type will no longer cause you to fall down from your jetpack (K2's uranium damage).
+
+  Locale:
+    - Added German translation, thanks to ST-DDT.
+    - Updated Russian translation, thanks to Shadow_Man.
+    - Updated Spanish translation, thanks to SpiderLove.
+---------------------------------------------------------------------------------------------------
+Version: 0.3.8
+Date: 12. 12. 2022
+  Changes:
+    - When lacking both jetpack and fuel, the error message will now warn about the missing jetpack rather than the fuel.
+
+  Bugfixes:
+    - Spacewalking no longer overwrites character_running_speed_modifier.
+    - Fixed crash on rare occasion when interacting with vehicles.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.3.7
+Date: 21. 11. 2022
+  Bugfixes:
+    - Fixed crash when a jetpacking character without a player attached got damaged (e.g. SE remote view).
+    - Fixed lack of collision for spacewalking characters without a player attached.
+
+  Scripting:
+    - Reworked mod interface to add compatible fuels. Mods that want to add compatible fuels must now implement a `jetpack_fuels` interface that Jetpack will call. See remote-interface.lua. (Previous implementation did not keep added fuels through save/load)
+    - Additional remote interfaces for common use cases: get_jetpack_for_character, is_jetpacking, get_current_fuels, get_current_fuel_for_character.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.3.6
+Date: 14. 11. 2022
+  Changes:
+    - Thrust is now slightly influenced by fuel type. Rocket fuel is the best and gives +20% thrust.
+    - Added new sounds and smoke effects when landing, spacewalking, and falling after taking damage.
+    - After falling down from taking damage, you are now unable to start your jetpack for 1.5 seconds.
+    - Spacewalking is no longer affected by your equipped jetpacks. You now have only a very small influence over your direction while spacewalking.
+    - Jetpacking into spaceship walls, clamps, or engines will now bounce you instead of making you fall.
+    - Saved fuel is now saved per character instead of per player (No difference unless you are able to change characters).
+    - Reverted runtime Factorio version check, and brought back strict dependency (now that 1.1.61 is stable).
+
+  Bugfixes:
+    - Fixed jetpack sound not being cleared when landing on empty space.
+    - Fixed fuel being used while spacewalking.
+
+  Compatibility:
+    - K2 fuels can now be used with the jetpack.
+
+  Scripting:
+    - Added remote interfaces so other mods can add compatible fuels: get_fuels, add_fuels. (Thanks to sharkman)
+
+  Locale:
+    - Added Japanese translation, thanks to nojio.
+    - Added Ukrainian tranlsation, thanks to Tramplex.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.3.5
+Date: 30. 06. 2022
+  Bugfixes:
+    - Fixed crash if switching character while crafting progress was over 100% (from full inventory).
+
+---------------------------------------------------------------------------------------------------
+Version: 0.3.4
+Date: 29. 06. 2022
+  Changes:
+    - Remove strict dependency on Factorio 1.1.61, check game version at runtime instead. This fixes a download issue with SE.
+    - Trying to use the jetpack during cooldown now plays an error sound.
+
+  Bugfixes:
+    - Fixed character spinning around in some cases when activating the jetpack over empty space.
+    - Jetpack technology icons now include the equipment icon.
+
+  Locale:
+    - Added Spanish translation thanks to Spiderlove.
+    - Added Turkish translation thanks to superbnoobster.
+    - Added Brazilian Portuguese translation thanks to 123499.
+    - Updated Korean translation thanks to x2605.
+    - Updated Russion translation thanks to Shadow_Man.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.3.3
+Date: 24. 06. 2022
+  Changes:
+    - Update for Factorio 1.1.61: Crafting item progress is now preserved when swapping characters.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.3.2
+Date: 18. 04. 2022
+  Bugfixes:
+    - Makes the jetpack sound entity match the character force.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.3.1
+Date: 24. 02. 2022
+  Features:
+    - Added jetpack character graphics.
+    - Added jetpack sound.
+
+  Changes:
+    - Added setting for jetpack sound volume.
+    - Added setting for fuel consumption.
+    - There is now a 0.25s delay after a jetpack transition change where the jetpack state can't be toggled again.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.2.13
+Date: 21. 11. 2021
+  Bugfixes:
+    - Fixed jetpack losing personal logistic requests when having 100+ empty slots between requests.
+
+  Compatibility:
+    - Better support for other mods that swap characters: remote.call("jetpack", "swap_jetpack_character", {...})
+---------------------------------------------------------------------------------------------------
+Version: 0.2.12
+Date: 25. 06. 2021
+  Bugfixes:
+    - Fixed code for Angel's rocket-booster fuel compatibility.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.2.11
+Date: 25. 06. 2021
+  Compatibility:
+    - Support for Angel's rocket-booster fuel thanks to kryojenik.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.2.10
+Date: 23. 06. 2021
+  Changes:
+    - Support for fuel burnt_result thanks to bcmpinc.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.2.9
+Date: 14. 05. 2021
+  Locale:
+    - Added Russian translation thanks to Дозер.
+    - Added Korean translation thanks to PolarZero.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.2.8
+Date: 11. 05. 2021
+  Bugfixes:
+    - Moved the code to restore the hand position to earlier in the swap process.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.2.7
+Date: 09. 05. 2021
+  Bugfixes:
+    - Fixed that processed fuel teck would be make a prerequisite of jetpacks if the tech was present but disabled.
+    - Now preserves player hand location (in the inventory).
+
+---------------------------------------------------------------------------------------------------
+Version: 0.2.6
+Date: 16. 01. 2021
+  Bugfixes:
+    - Fixed equipment burnt result being cleared.
+    - Fixes jetpacks could be placed in vehicles.
+    - Fixed combat robots being disconnected from player.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.2.5
+Date: 07. 12. 2020
+  Compatibility:
+    - Changed swap_character processing order to work with RPGsystem.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.2.4
+Date: 29. 10. 2020
+  Bugfixes:
+    - Fixed 1st personal logistic settings being lost due to previous fix.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.2.3
+Date: 28. 10. 2020
+  Bugfixes:
+    - Fixed some personal logistic settings being lost.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.2.2
+Date: 25. 10. 2020
+  Changes:
+    - Changed the way that spacewalking is handled. Removes the flicker when stepping off space platform and allows entry to vehicles. (Does not affect flicker in other situations.)
+    - When you log back in to multiplayer, if your character was in jetpack mode then jetpack mode is reactivated.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.2.1
+Date: 23. 11. 2020
+  Info:
+    - Updated for Factorio 1.1.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.1.25
+Date: 10. 10. 2020
+  Changes:
+    - Improved collision for interiors (out of map tiles).
+
+---------------------------------------------------------------------------------------------------
+Version: 0.1.24
+Date: 27. 09. 2020
+  Bugfixes:
+    - Fix desync.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.1.23
+Date: 22. 09. 2020
+  Changes:
+    - Jetpack is now reduced by character weight (mostly based on armor grid slots), bigger armor = slower speed, but more grid slots also means more space for jetpack equipment to compensate.
+    - Added setting for speed reduces shield: The value determines how much shields are reduced by flying speed.
+    - Added setting for falling when taking damage: If enabled you will fall if you take damage.
+    - Added setting for jetpack stacking: If enabled jetpacks stack their thrust, if disabled they do not. (Defaults to on)
+
+---------------------------------------------------------------------------------------------------
+Version: 0.1.22
+Date: 21. 09. 2020
+  Bugfixes:
+    - Fixed that jetpack could collect robots if a personal roboport was added to a grid after switching modws inside a logistic network.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.1.21
+Date: 30. 08. 2020
+  Bugfixes:
+    - Fixed some equipment energy being lost on mode transition.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.1.20
+Date: 22. 08. 2020
+  Compatibility:
+    - Enforced load order to be after PickerTweaks so that flying character gets any updated invetory size changes.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.1.19
+Date: 07. 07. 2020
+  Changes:
+    - Reduced power consumption to minimal value.
+    - Changed base type back to movement bonus equipment. (Was belt immunity equipment but had erratic behaviour due to power interaction. You still have belt immunity while flying.)
+
+  Bugfixes:
+    - Fixed issue when trying to swap characters with certain logsitic slot formats.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.1.18
+Date: 08. 06. 2020
+  Bugfixes:
+    - Fixed issue when trying to swap characters with legacy trash slot bonuses.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.1.17
+Date: 05. 06. 2020
+  Bugfixes:
+    - Fixed crash if trying to set robots to rejoin a character if they moved to a different surface.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.1.16
+Date: 31. 05. 2020
+  Bugfixes:
+    - Fixed character swap not continuing exoskeleton enable/disable state.
+
+  Locale:
+    - Added Chinese translation thanks to Frost.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.1.15
+Date: 19. 05. 2020
+  Bugfixes:
+    - Fixed issue with dropping items when your inventory + crafting queue resources exceeded inventory space.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.1.14
+Date: 27. 04. 2020
+  Changes:
+    - Flying versions of character's don't appear in crafting tooltips anymore.
+
+  Bugfixes:
+    - Prevented a crash if equipment fails to copy during state change (only happens if original equipment was invalid due to equipment grid size changing).
+
+---------------------------------------------------------------------------------------------------
+Version: 0.1.13
+Date: 06. 04. 2020
+  Bugfixes:
+    - Crafting queue fix.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.1.12
+Date: 05. 04. 2020
+  Bugfixes:
+    - Fixed burner equipment having settings cleared on state change.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.1.11
+Date: 24. 03. 2020
+  Bugfixes:
+    - Fixed issue with invalid character after state change and reload.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.1.10
+Date: 24. 03. 2020
+  Changes:
+    - Fixed issue with missing robots after state change.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.1.9
+Date: 21. 03. 2020
+  Changes:
+    - Support for mods that change character inventory capacity via script.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.1.8
+Date: 17. 03. 2020
+  Info:
+    - Changes for Factorio 0.18.13
+
+  Scripting:
+    - Add remote interfaces to disable and enable jetpack.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.1.7
+Date: 12. 03. 2020
+  Bugfixes:
+    - Fixed missing locale.
+
+  Scripting:
+    - Add remote interface to stop jetpack.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.1.6
+Date: 10. 03. 2020
+  Bugfixes:
+    - Fixed resetting selected gun on mode change.
+    - Cannot activate jetpack while in a vehicle.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.1.5
+Date: 10. 03. 2020
+  Bugfixes:
+    - Fixed personal robots losing their character association.
+    - Fixed crash when shadow was unexpectedly deleted (in a different situation to last time).
+
+---------------------------------------------------------------------------------------------------
+Version: 0.1.4
+Date: 08. 03. 2020
+  Changes:
+    - Jetpack can't be used over out-of-map tiles (typically used for underground).
+    - Jetpack can't be used inside spaceship.
+    - Jetpack from a spaceship can now be affected by spaceship speed - requires Space Exploration 0.3.11+ (currently in closed testing).
+
+---------------------------------------------------------------------------------------------------
+Version: 0.1.3
+Date: 08. 03. 2020
+  Changes:
+    - Increased landing snap distance when landing position is blocked.
+
+  Bugfixes:
+    - Fixed nightvision losing power when changing states.
+    - Fixed crash when shadow was unexpectedly deleted.
+    - Fixed missing crafting category if loading without Space Exploration.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.1.2
+Date: 07. 03. 2020
+  Bugfixes:
+    - Fixed technology locale.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.1.1
+Date: 05. 03. 2020
+  Info:
+    - Separate from Space Exploration development.

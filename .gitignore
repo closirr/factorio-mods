@@ -1,0 +1,5 @@
+mod-settings.dat
+*.zip
+*.tmp
+Thumbs.db
+.DS_Store

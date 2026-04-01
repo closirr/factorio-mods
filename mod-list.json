@@ -1,0 +1,61 @@
+
+{
+  "mods": 
+  [
+    
+    {
+      "name": "base",
+      "enabled": true
+    },
+    
+    {
+      "name": "elevated-rails",
+      "enabled": true
+    },
+    
+    {
+      "name": "quality",
+      "enabled": true
+    },
+    
+    {
+      "name": "space-age",
+      "enabled": true
+    },
+    
+    {
+      "name": "BottleneckLite",
+      "enabled": true
+    },
+    
+    {
+      "name": "bullet-trails",
+      "enabled": true
+    },
+    
+    {
+      "name": "even-distribution",
+      "enabled": true
+    },
+    
+    {
+      "name": "jetpack",
+      "enabled": true
+    },
+    
+    {
+      "name": "Nanobots3",
+      "enabled": true
+    },
+    
+    {
+      "name": "RateCalculator",
+      "enabled": true
+    },
+    
+    {
+      "name": "stdlib2",
+      "enabled": true
+    }
+  ]
+}
